@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Тестовое задание SIMAI</title>
+</head>
+<body>
+  <div class="header">
+    <h1>генератор html-элементов</h1>
+    <h2>Описание</h2>
+    <p>
+      Необходимо написать класс Component для генерации элементов на странице сайта. В текущем задании нет необходимости генерировать всевозможные html-элементы. Достаточно будет генерации нескольких видов кнопок. 
+      В зависимости от переданных параметров класс Component должен создавать разный вид одного и того же элемента страницы.
+      На вход классу Component приходят данные о создаваемом элементе: </p>
+      <ol>
+          <li>Шаблон – шаблон (html представление) элемента страницы</li>
+          <li>Параметры отображения – с их помощью можно менять внешний вид элемента страницы</li>
+          <li>Модификаторы – предназначены для «тонкой настройки» отображения элемента страницы</li>
+          <li>Текстовые значения, которые могут содержать элементы страницы</li>
+          <li>События – перечень действий на каждое событие</li>
+      </ol>
+      <p>
+          На выходе должны получить сгенерированный элемент страницы, созданный классом Component в зависимости от входных данных. </p>
+      
+      <h2>Функциональные требования</h2>
+      <p>
+          Использование нативного JavaScript    
+      </p>
+  </div>
+  <div>
+    <h1>Решение</h1>
+    <table class="table table-bordered">
+    <thead>
+      <td>Наименование</td>
+      <td>Значение</td>
+      <td>Представление</td>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Входные Параметры
+          <div class="col-1">
+            <button type="button" class="btn btn-dark" id="template_view">template</button>
+            <button type="button" class="btn btn-dark" id="view_view">view</button>
+            <button type="button" class="btn btn-dark" id="modify_view">modify</button>
+            <button type="button" class="btn btn-dark" id="text_view">text</button>
+            <button type="button" class="btn btn-dark" id="event_view">event</button>
+          </div>
+        </td>
+        <td>
+          <div class="template">
+            <p id="template" ></p>
+          </div>
+          <div class="view">
+            <p id="view" ></p>
+          </div>
+          <div class="modify">
+            <p id="modify" ></p>
+          </div>
+          <div class="text">
+            <p id="text" ></p>
+          </div>
+          <div class="event">
+            <p id="event" ></p>
+          </div>
+          
+        </td>
+        <td>
+          <button type="button" id="generate_btn" class="btn btn-info">Generate</button>
+          <div class="container">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+  <script type="module" src=script.js></script>    
+</body>
+</html>

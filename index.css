@@ -1,0 +1,31 @@
+.body {
+  margin: 20px,auto;
+}
+.table {
+  margin: 20px;
+  max-width: 80%;
+  border: 1px solid #9f9f9f;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+}
+.thead{
+  width: 80%;
+}
+.thead .th:nth-child(1) {
+  width: 30%;
+}
+.header{
+  margin: 20px;
+}
+.button {
+  border-width: 0;
+  color: #1253a2;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Arial";
+  font-size: 16px;
+  height: 16x;
+  padding: 0 auto;
+  margin: 0px 0px 0px 0px;
+  background-color: #999;
+  background-blend-mode: normal;
+}
